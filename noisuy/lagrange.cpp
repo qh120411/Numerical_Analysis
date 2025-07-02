@@ -9,7 +9,7 @@ typedef struct {
 void nhap(int *n, diem **d ) {
     cout << "Nhap so diem: ";
     cin >> *n;
-    *d = (int*)malloc((*n) * sizeof(diem));
+    *d = (diem*)malloc((*n) * sizeof(diem));
     for (int i = 0; i < *n; i++) {
         cout << "Nhap diem thu " << i + 1 << ": ";
         cin >> (*d)[i].x >> (*d)[i].y;

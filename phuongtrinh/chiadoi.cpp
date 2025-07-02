@@ -20,11 +20,11 @@ double chiadoi( double a, double b, double epsilon) {
         if ( f(c) == 0 ) {
             break;
         }
-        else if ( f(c) * f(a) < 0 ) {
-            b = c;
+        else if ( f(c) * f(a) > 0 ) {
+            a = c;
         }
         else {
-            a = c;
+            b = c;
         }
         it++;
         cout << "Lan lap: " << it << '\t' << " x = " << c << '\t' << " f(x) = " << f(c) << '\t' << " sai so = " << saiso << endl;

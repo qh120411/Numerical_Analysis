@@ -2,12 +2,12 @@
 
 using namespace std;
 
-#define f(x) (exp(x*x))
+#define f(x) ( ( x * atan(x) ) / ( 5 * x * x + 10)  )
 
 double hinhthang ( double a, double b, double n) {
     double h = (b - a) / n;
     double S = f(a) + f(b);
-    for (int i = 1; i < n-1; i++) {
+    for (int i = 1; i < n; i++) {
         double x = a + i * h;
         S += 2 * f(x);
     }
